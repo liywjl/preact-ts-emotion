@@ -1,17 +1,9 @@
-import * as React from "react";
-import { css } from "@emotion/core";
+import { HeaderReact } from "./HeaderReact";
+import { HeaderCore } from "./HeaderCore";
 
-export interface HelloWorldProps {
-  userName: string;
-  lang: string;
-}
-
-export const App = (props: HelloWorldProps) => (
-  <h1
-    css={css`
-      color: red;
-    `}
-  >
-    Hi {props.userName} from React! Welcome to {props.lang}!
-  </h1>
+export const App = () => (
+  <>
+    <HeaderReact />
+    <HeaderCore />
+  </>
 );
